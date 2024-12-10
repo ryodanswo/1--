@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coffee Blog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Coffee Blog</h1>
+
+  <div class="form-container">
+    <label for="name">Название напитка:</label>
+    <input type="text" id="name" value="Американо"><br><br>
+
+    <label for="type">Сорт кофе:</label>
+    <select id="type">
+      <option value="Арабика">Арабика</option>
+      <option value="Молотый">Молотый</option>
+    </select><br><br>
+
+    <label>Крепость обжарки:</label><br>
+    <label><input type="radio" name="roast" value="крепкая"> Крепкая</label><br>
+    <label><input type="radio" name="roast" value="средняя"> Средняя</label><br>
+    <label><input type="radio" name="roast" value="легкая" checked> Легкая</label><br><br>
+
+    <label for="image">Изображение:</label>
+    <input type="text" id="image" value="https://upload.wikimedia.org/"><br><br>
+
+    <label for="price">Стоимость напитка:</label>
+    <input type="number" id="price" value="150"><br><br>
+
+    <label for="description">Описание:</label>
+    <textarea id="description">Какое утро без кофе???</textarea><br><br>
+
+    <button type="button">Добавить напиток</button>
+  </div>
+
+  <table class="result-table">
+    <thead>
+      <tr>
+        <th>Изображение</th>
+        <th>Название</th>
+        <th>Сорт</th>
+        <th>Крепость обжарки</th>
+        <th>Стоимость</th>
+        <th>Описание</th>
+    </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><img src="https://media.istockphoto.com/id/1368238965/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%87%D0%B0%D1%88%D0%BA%D0%BE%D0%B9-%D0%BA%D0%BE%D1%84%D0%B5-%D0%BD%D0%B0-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D0%BE%D0%BC-%D1%81%D1%82%D0%BE%D0%BB%D0%B5.jpg?s=612x612&w=0&k=20&c=s5WiUqSZI2lQwI5_lurl_lbN66V0DPD4w__tO4d7liw=" alt="Coffee"></td>  
+    <td>Американо</td>
+    <td>Арабика</td>
+    <td>1</td>
+    <td>150</td>
+    <td>Какое утро без кофе???</td>
+  </tr>
+</tbody>
+</table>
+</body>
+</html>
